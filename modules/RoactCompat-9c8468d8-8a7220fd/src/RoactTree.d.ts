@@ -1,5 +1,10 @@
 import { RootType } from "../../ReactRoblox-9c8468d8-8a7220fd/src/client/ReactRobloxRoot";
-import { ReactElement } from "../../React-9c8468d8-8a7220fd";
+
+export interface Element {
+    component: defined;
+    props: defined;
+    source?: string;
+}
 
 export type RoactHandle = {
     root: RootType,
@@ -8,7 +13,7 @@ export type RoactHandle = {
 }
 
 export interface RoactTree {
-    mount(element: ReactElement, parent?: Instance, key?: string): RoactHandle;
-    update(handle: RoactHandle, element: ReactElement): RoactHandle;
+    mount(element: Element, parent?: Instance, key?: string): RoactHandle;
+    update(handle: RoactHandle, element: Element): RoactHandle;
     unmount(handle: RoactHandle): void;
 }
