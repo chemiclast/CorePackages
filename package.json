@@ -1,5 +1,5 @@
 {
-  "name": "rbxts-corepackages",
+  "name": "@rbxts/corepackages",
   "version": "1.0.0",
   "files": [
     "modules"
