@@ -1,0 +1,42 @@
+import React from "../../React-9c8468d8-8a7220fd";
+import { RoactTree } from "./RoactTree";
+import { Shared } from "../../Shared-9c8468d8-8a7220fd/src";
+
+declare namespace Roact {
+    export type Component = React.Component;
+    export type PureComponent = React.PureComponent;
+    export const createElement: typeof React.createElement;
+    export const createRef: typeof React.createRef;
+    export const forwardRef: typeof React.forwardRef;
+    export const createContext: typeof React.createContext;
+    export const mount: RoactTree["mount"];
+    export const update: RoactTree["update"];
+    export const unmount: RoactTree["unmount"];
+    export const createFragment: (children: React.ReactElement[]) => React.ReactElement;
+    export function oneChild(children?: { [childName: string]: React.ReactElement }): React.ReactElement | undefined;
+    export function oneChild(children?: ReadonlyMap<string | number, React.ReactElement>): React.ReactElement | undefined;
+    export function oneChild(children?: ReadonlyArray<React.ReactElement>): React.ReactElement | undefined;
+    export function setGlobalConfig(config: { [key: string]: unknown }): void;
+    export const Portal: React.ComponentClass<{ target: Instance }>;
+    export type Portal = React.ComponentClass<{ target: Instance }>;
+    export const Ref: "ref";
+    export const Children: "children";
+    export const Event: Shared.Event;
+    export const Change: Shared.Change;
+    export const createBinding: typeof React.createBinding;
+    export const joinBindings: typeof React.joinBindings;
+    export const createMutableSource: typeof React.createMutableSource;
+    export const lazy: typeof React.lazy;
+    export const memo: typeof React.memo;
+    export const useCallback: typeof React.useCallback;
+    export const useContext: typeof React.useContext;
+    export const useEffect: typeof React.useEffect;
+    export const useImperativeHandle: typeof React.useImperativeHandle;
+    export const useDebugValue: typeof React.useDebugValue;
+    export const useLayoutEffect: typeof React.useLayoutEffect;
+    export const useMemo: typeof React.useMemo;
+    export const useMutableSource: typeof React.useMutableSource;
+    export const useReducer: typeof React.useReducer;
+    export const useRef: typeof React.useRef;
+    export const useState: typeof React.useState;
+}

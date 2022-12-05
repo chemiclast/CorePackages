@@ -1,0 +1,11 @@
+{
+  "name": "@rbxts/react-roblox",
+  "version": "17.0.1-rc.16",
+  "main": "src/init.lua",
+  "license": "MIT",
+  "types": "src/index.d.ts",
+  "files": [
+    "src",
+    "!**/*.tsbuildinfo"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "@rbxts/boolean",
+  "version": "1.1.0",
+  "main": "src/init.lua",
+  "license": "MIT",
+  "files": [
+    "src",
+    "!**/*.tsbuildinfo"
+  ]
+}
