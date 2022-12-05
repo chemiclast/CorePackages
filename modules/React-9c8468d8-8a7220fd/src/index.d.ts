@@ -138,9 +138,9 @@ declare namespace React {
     }
 
     interface ReactElement<P = any, T extends string | JSXElementConstructor<any> = string | JSXElementConstructor<any>> {
-        type: T;
+        type?: T;
         props: P;
-        key: Key | null;
+        key?: Key;
     }
 
     interface ReactComponentElement<
@@ -167,7 +167,7 @@ declare namespace React {
     type ClassicElement<P> = CElement<P, ClassicComponent<P, ComponentState>>;
 
     interface ReactPortal extends ReactElement {
-        key: Key | null;
+        key?: Key;
         children: ReactNode;
     }
 
