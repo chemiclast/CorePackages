@@ -1,8 +1,9 @@
 import React from "../../React-9c8468d8-8a7220fd";
-import { RoactTree } from "./RoactTree";
+import { RoactTree, RoactHandle } from "./RoactTree";
 import { Shared } from "../../Shared-9c8468d8-8a7220fd/src";
 
 declare namespace Roact {
+    export type Tree = RoactHandle;
     export type Component = React.Component;
     export type PureComponent = React.PureComponent;
     export const createElement: typeof React.createElement;
