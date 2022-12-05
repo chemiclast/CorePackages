@@ -13,7 +13,7 @@ export type RoactHandle = {
 }
 
 export interface RoactTree {
-    mount(element: Element, parent?: Instance, key?: string): RoactHandle;
-    update(handle: RoactHandle, element: Element): RoactHandle;
-    unmount(handle: RoactHandle): void;
+    mount: (element: Element, parent?: Instance, key?: string) => RoactHandle;
+    update: (handle: RoactHandle, element: Element) => RoactHandle;
+    unmount: (handle: RoactHandle) => void;
 }
