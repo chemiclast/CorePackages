@@ -1,7 +1,7 @@
 import { RootType } from "../../ReactRoblox-9c8468d8-8a7220fd/src/client/ReactRobloxRoot";
 
 export interface Element {
-    component: defined;
+    component?: defined;
     props: defined;
     source?: string;
 }
