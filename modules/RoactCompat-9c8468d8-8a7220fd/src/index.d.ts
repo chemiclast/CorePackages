@@ -3,7 +3,6 @@ import { RoactTree } from "./RoactTree";
 import { Shared } from "../../Shared-9c8468d8-8a7220fd/src";
 
 declare namespace Roact {
-    export type Tree = RoactTree;
     export type Component = React.Component;
     export type PureComponent = React.PureComponent;
     export const createElement: typeof React.createElement;
