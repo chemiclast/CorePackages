@@ -3,5 +3,7 @@
   "version": "1.0.0",
   "files": [
     "modules"
-  ]
+  ],
+  "main": "modules/React-9c8468d8-8a7220fd/src/init.lua",
+  "types": "modules/React-9c8468d8-8a7220fd/src/index.d.ts"
 }
